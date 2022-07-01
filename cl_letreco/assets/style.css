@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;400&family=Rubik:wght@400;700&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+
+    --background:#141414;
+    --incorrect: #943E3C;
+    --wait: #C79C2E;
+    --correct: #51B36E;
+}
+
+body{
+
+ background-color: var(--background);
+
+}
+
+.app_container{
+
+    max-width: 500px;
+    
+    margin:auto;
+}
+
+.head_bar{
+
+
+    height: 12vh;
+    width :100%;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    color: crimson;
+
+}
+
+
+
+.nav_icons{
+
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.but_nav{
+    height: 42px;
+    width: 36px;
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.but_nav:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #FFF;
+    color: crimson;
+    transition: 0.3s;
+}
+/* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD */
+
+.table{
+width: 100%;
+}
+.line_table{
+
+    max-width: 272px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+
+.letter_case{
+
+    width: 48px;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 5px;
+    border: solid 1px;
+    font-size: 22px;
+    text-align: center;
+    background-color: var(--background);
+    border-color: white;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    
+    
+}
+
+.red{
+    background-color: var(--incorrect);
+}
+
+.yell{
+
+    background-color: var(--wait); 
+}
+.green{
+    background-color: var(--correct);   
+}
+
+
+
+
+
+.buttons_table{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.but_erased{
+    width: 80px;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+}
+.but_confirm{
+    width: 80px;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+.keyboard_container{
+
+width: 100%;
+
+}
+
+.key_keyboard{
+    width: 33px;
+    height: 40px;
+    background-color: crimson;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 22px;
+    text-align: center;
+    /* transition: .2s ease-in-out 0s; */
+}
+.key_keyboard:hover{
+
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #FFF;
+    color: crimson;
+    transition: 0.3s;
+
+}
+
+
+.line_keyboard{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* 33*10+8*9 402*/
+    /* 33*9+8*8 361*/
+    /* 33*7+8*9 279*/
+}
+.top{
+    width: 402px;
+}
+.mid{
+    width: 361px;  
+}
+.bot{
+    width: 279px;
+}
+
