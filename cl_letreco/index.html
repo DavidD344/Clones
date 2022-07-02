@@ -8,7 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-
+    <section id="menu" class="menu_win escondido">
+        <div class="box_menu">
+            <h1>VOCE VENCEU!</h1>
+            <a class="but_confirm" onClick="window.location.reload()">
+                REINICIAR
+            </a>
+        </div>
+    </section>
     <section class="app_container">
 
 
@@ -57,9 +64,9 @@
             <div class="line_table">
                 <div id="40" class="letter_case"></div>
                 <div id="41" class="letter_case"></div>
-                <div id="42" class="letter_case red"></div>
-                <div id="43" class="letter_case yell"></div>
-                <div id="44" class="letter_case green"></div>
+                <div id="42" class="letter_case"></div>
+                <div id="43" class="letter_case"></div>
+                <div id="44" class="letter_case"></div>
             </div>
 
             <div class="buttons_table">
@@ -67,7 +74,7 @@
                 <button class="but_erased" onclick="control.delete()">
                     APAGAR
                 </button>
-                <button class="but_confirm" onclick="control.nextRow()">
+                <button class="but_confirm" onclick="control.downRow()">
                     CONFIRMAR
                 </button>
 

@@ -25,6 +25,36 @@ body{
 
 }
 
+.menu_win{
+
+        width: 100vw;
+        height: 100vh;
+        background-color:white;
+
+        z-index: 99;
+        position: fixed;
+        display: flex;
+      
+}
+
+.box_menu{
+    margin: auto;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    opacity: 1.0;
+    background-color: crimson;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 48px;
+}
+
+
+.escondido{
+display: none;
+}
 .app_container{
 
     max-width: 500px;
