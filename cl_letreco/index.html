@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/letreco/favicon.ico"/>
     <link rel="stylesheet" href="./assets/style.css">
     <title>Document</title>
 </head>
@@ -28,47 +27,47 @@
         <article class="table">
 
             <div class="line_table">
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
+                <div id="00" class="letter_case"></div>
+                <div id="01" class="letter_case"></div>
+                <div id="02" class="letter_case"></div>
+                <div id="03" class="letter_case"></div>
+                <div id="04" class="letter_case"></div>
             </div>
             <div class="line_table">
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
+                <div id="10" class="letter_case"></div>
+                <div id="11" class="letter_case"></div>
+                <div id="12" class="letter_case"></div>
+                <div id="13" class="letter_case"></div>
+                <div id="14" class="letter_case"></div>
             </div>
             <div class="line_table">
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
+                <div id="20" class="letter_case"></div>
+                <div id="21" class="letter_case"></div>
+                <div id="22" class="letter_case"></div>
+                <div id="23" class="letter_case"></div>
+                <div id="24" class="letter_case"></div>
             </div>
             <div class="line_table">
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
+                <div id="30" class="letter_case"></div>
+                <div id="31" class="letter_case"></div>
+                <div id="32" class="letter_case"></div>
+                <div id="33" class="letter_case"></div>
+                <div id="34" class="letter_case"></div>
             </div>
             <div class="line_table">
-                <div class="letter_case"></div>
-                <div class="letter_case"></div>
-                <div class="letter_case red"></div>
-                <div class="letter_case yell"></div>
-                <div class="letter_case green"></div>
+                <div id="40" class="letter_case"></div>
+                <div id="41" class="letter_case"></div>
+                <div id="42" class="letter_case red"></div>
+                <div id="43" class="letter_case yell"></div>
+                <div id="44" class="letter_case green"></div>
             </div>
 
             <div class="buttons_table">
 
-                <button class="but_erased">
+                <button class="but_erased" onclick="control.delete()">
                     APAGAR
                 </button>
-                <button class="but_confirm">
+                <button class="but_confirm" onclick="control.nextRow()">
                     CONFIRMAR
                 </button>
 
@@ -77,44 +76,43 @@
         </article>
 
         <artcile class="keyboard_container">
-
+           
             <div class="line_keyboard top">
-                <button class="key_keyboard">Q</button>
-                <button class="key_keyboard">W</button>
-                <button class="key_keyboard">E</button>
-                <button class="key_keyboard">R</button>
-                <button class="key_keyboard">T</button>
-                <button class="key_keyboard">Y</button>
-                <button class="key_keyboard">U</button>
-                <button class="key_keyboard">I</button>
-                <button class="key_keyboard">O</button>
-                <button class="key_keyboard">P</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">Q</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">W</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">E</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">R</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">T</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">Y</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">U</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">I</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">O</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">P</button>
             </div>
             <div class="line_keyboard mid">
-                <button class="key_keyboard">A</button>
-                <button class="key_keyboard">S</button>
-                <button class="key_keyboard">D</button>
-                <button class="key_keyboard">F</button>
-                <button class="key_keyboard">G</button>
-                <button class="key_keyboard">H</button>
-                <button class="key_keyboard">J</button>
-                <button class="key_keyboard">K</button>
-                <button class="key_keyboard">L</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">A</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">S</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">D</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">F</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">G</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">H</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">J</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">K</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">L</button>
             </div>
             <div class="line_keyboard bot">
-                <button class="key_keyboard">Z</button>
-                <button class="key_keyboard">X</button>
-                <button class="key_keyboard">C</button>
-                <button class="key_keyboard">V</button>
-                <button class="key_keyboard">B</button>
-                <button class="key_keyboard">N</button>
-                <button class="key_keyboard">M</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">Z</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">X</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">C</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">V</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">B</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">N</button>
+                <button class="key_keyboard" onclick="control.insert(this.textContent)">M</button>
             </div>
-
 
         </artcile>
 
-        
+        <script src="./assets/img/js/script.js"></script>
     </section>
 
 </body>
