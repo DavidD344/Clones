@@ -39,7 +39,7 @@ let control = {
     this.nome += document.getElementById(this.linha_pos + "4").innerHTML
 
     console.log(this.nome)
-    console.log(this.nome[1])
+    
 },
 
  verifyWin() {
@@ -60,8 +60,6 @@ let control = {
   },
   verifyGrenn() {
 
-    // [...this.nome]
-    // [...this.letruco]
 
 
         [...this.nome].forEach((letter, index)=>{          
@@ -77,13 +75,6 @@ let control = {
     
   },
   verifyYell() {
-
-    //  [...this.nome].forEach((letter, index)=>{
-        
-    //      if (letter == this.letruco) {
-    //          document.getElementById(this.linha_pos + String(index)).classList.add('green')
-    //      }
-    //  })
 
     [...this.nome].forEach((a,index)=>{
 
@@ -106,18 +97,6 @@ let control = {
         })
         if(i == 0){ document.getElementById(this.linha_pos + String(index)).classList.add('red')}
     })
-  
-    // [...this.nome].forEach((a,index)=>{
-    //     i=0;
-    //     [...this.letruco].forEach((b,bindex)=>{
-
-    //        if(a.includes(b)){i++}
-    //        console.log(i)
-    //     if(i==0){
-    //         document.getElementById(this.linha_pos + String(index)).classList.add('red')
-    //     }
-    //     })
-    // })
     
   },
 
@@ -142,11 +121,12 @@ let control = {
   },
 
   downRow() {
+    if(this.letra_pos > 4){
     this.callName()
     this.verifyColor()
     this.verifyWin()
     this.nextRow()
- 
+  }
   }
 
 
